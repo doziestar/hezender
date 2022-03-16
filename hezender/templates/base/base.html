@@ -1,624 +1,598 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Author: Chidozie C. Okafor" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Author: Chidozie C. Okafor" />
 
-		<title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
 
-		<link
-			rel="stylesheet"
-			href="{{static_url_for('static', filename='build/heze/css/bootstrap.min.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/bootstrap.min.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/boxicons.min.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/boxicons.min.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/flaticon.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/flaticon.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/animate.min.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/animate.min.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/nice-select.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/nice-select.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/magnific-popup.min.css') }}"
-		/>
+    <link
+      rel="stylesheet"
+      href="{% static 'heze/css/magnific-popup.min.css' %}"
+    />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/owl.carousel.min.css') }}"
-		/>
+    <link
+      rel="stylesheet"
+      href="{% static 'heze/css/owl.carousel.min.css' %}"
+    />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/meanmenu.min.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/meanmenu.min.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/style.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/style.css' %}" />
 
-		<link
-			rel="stylesheet"
-			href="{{ static_url_for('static', filename='build/heze/css/responsive.css') }}"
-		/>
+    <link rel="stylesheet" href="{% static 'heze/css/responsive.css' %}" />
 
-		<link
-			rel="icon"
-			href="{{ static_url_for('static', filename='build/img/heze.png') }}"
-			type="image/png"
-		/>
-	</head>
-	<body>
-		<div id="preloader">
-			<div class="loader"><span></span></div>
-		</div>
+    <link rel="icon" href="{% static 'img/heze.png' %}" type="image/png" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader"><span></span></div>
+    </div>
 
-		<header class="header-area">
-			<div class="main-navbar-area">
-				<div class="main-responsive-nav">
-					<div class="container">
-						<div class="main-responsive-menu">
-							<div class="logo">
-								<a href="index.html">
-									<img
-										src="{{ static_url_for('static', filename='build/img/hezedark.png')}}"
-										style="width: 100px"
-										alt="logo"
-									/>
-								</a>
-							</div>
-							<div class="side-option-responsive">
-								<a href="#" class="side-option-button">
-									<span class="dot1"></span>
-									<span class="dot2"></span>
-									<span class="dot3"></span>
-								</a>
-								<div class="side-option-inner">
-									<div class="item">
-										<div class="language">
-											<a href="#language" class="language-button"
-												>Language<i class="bx bx-chevron-down"></i>
-											</a>
-											<ul class="menu">
-												<li class="menu-item">
-													<a href="#" class="menu-link">
-														<img
-															src="{{ static_url_for('static', filename='build/heze/images/flag-uk.png')}}"
-															alt="flag"
-														/>
-														English
-													</a>
-												</li>
-												<li class="menu-item">
-													<a href="#" class="menu-link">
-														<img
-															src="{{ static_url_for('static', filename='build/heze/images/flag-germany.png')}}"
-															alt="flag"
-														/>
-														Deutsch</a
-													>
-												</li>
-												<li class="menu-item">
-													<a href="#" class="menu-link">
-														<img
-															src="{{ static_url_for('static', filename='build/heze/images/flag-portugal.png')}}"
-															alt="flag"
-														/>
-														󠁥Português
-													</a>
-												</li>
-												<li class="menu-item">
-													<a href="#" class="menu-link">
-														<img
-															src="{{ static_url_for('static', filename='build/heze/images/flag-jordan.png')}}"
-															alt="flag"
-														/>
-														العربية
-													</a>
-												</li>
-												<li class="menu-item">
-													<a href="#" class="menu-link">
-														<img
-															src="{{ static_url_for('static', filename='build/heze/images/flag-china.png')}}"
-															alt="flag"
-														/>
-														中文
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="item">
-										<div class="cart">
-											<a href="cart.html" class="cart-btn">
-												<i class="flaticon shopping-bag"></i>
-												<span class="badge">0</span>
-											</a>
-										</div>
-									</div>
-									<div class="item">
-										<a
-											href="#searchBoxResponsive"
-											class="btn-search"
-											data-effect="mfp-zoom-in"
-										>
-											<i class="bx bx-search"></i>
-										</a>
-										<div
-											id="searchBoxResponsive"
-											class="search-box mfp-with-anim mfp-hide"
-										>
-											<form class="search-form">
-												<input
-													class="search-input"
-													name="search"
-													placeholder="Search"
-													type="text"
-												/>
-												<button type="submit" class="btn-search">
-													<i class="bx bx-search"></i>
-												</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-nav">
-					<div class="container">
-						<nav class="navbar navbar-expand-md navbar-light">
-							<a class="navbar-brand" href="index.html">
-								<img
-									src="{{ static_url_for('static', filename='build/img/hezelight.png')}}"
-									style="width: 100px"
-									alt="Logo"
-								/>
-								<img
-									src="{{ static_url_for('static', filename='build/img/hezelight.png')}}"
-									style="width: 100px"
-									alt="Logo"
-								/>
-							</a>
-							<div class="collapse navbar-collapse mean-menu">
-								<ul class="navbar-nav m-auto">
-									<li class="nav-item">
-										<a href="#" class="nav-link active toggle">Home</a>
-									</li>
-									<li class="nav-item">
-										<a href="about.html" class="nav-link">About</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link toggle"
-											>Hezender Modalities<i class="bx bx-chevron-down"></i
-										></a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="expert.html" class="nav-link">Our Expert</a>
-											</li>
-											<li class="nav-item">
-												<a href="gallery.html" class="nav-link">Gallery</a>
-											</li>
-											<li class="nav-item">
-												<a href="appointment.html" class="nav-link"
-													>Appointment</a
-												>
-											</li>
-											<li class="nav-item">
-												<a href="#" class="nav-link toggle"
-													>User<i class="bx bx-chevron-down"></i
-												></a>
-												<ul class="dropdown-menu">
-													<li class="nav-item">
-														<a href="login.html" class="nav-link">Login</a>
-													</li>
-													<li class="nav-item">
-														<a href="register.html" class="nav-link"
-															>Register</a
-														>
-													</li>
-													<li class="nav-item">
-														<a href="my-account.html" class="nav-link"
-															>My Account</a
-														>
-													</li>
-													<li class="nav-item">
-														<a href="forgot-password.html" class="nav-link"
-															>Forgot Password</a
-														>
-													</li>
-												</ul>
-											</li>
-											<li class="nav-item">
-												<a href="faq.html" class="nav-link">FAQ</a>
-											</li>
-											<li class="nav-item">
-												<a href="error-404.html" class="nav-link">404 Error</a>
-											</li>
-											<li class="nav-item">
-												<a href="coming-soon.html" class="nav-link"
-													>Coming Soon</a
-												>
-											</li>
-											<li class="nav-item">
-												<a href="privacy-policy.html" class="nav-link"
-													>Privacy Policy</a
-												>
-											</li>
-											<li class="nav-item">
-												<a href="terms-of-service.html" class="nav-link"
-													>Terms & Conditions</a
-												>
-											</li>
-										</ul>
-									</li>
+    <header class="header-area">
+      <div class="main-navbar-area">
+        <div class="main-responsive-nav">
+          <div class="container">
+            <div class="main-responsive-menu">
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="{% static 'img/hezedark.png' %}"
+                    style="width: 100px"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+              <div class="side-option-responsive">
+                <a href="#" class="side-option-button">
+                  <span class="dot1"></span>
+                  <span class="dot2"></span>
+                  <span class="dot3"></span>
+                </a>
+                <div class="side-option-inner">
+                  <div class="item">
+                    <div class="language">
+                      <a href="#language" class="language-button"
+                        >Language<i class="bx bx-chevron-down"></i>
+                      </a>
+                      <ul class="menu">
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">
+                            <img
+                              src="{% static 'heze/images/flag-uk.png' %}"
+                              alt="flag"
+                            />
+                            English
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">
+                            <img
+                              src="{% static 'heze/images/flag-germany.png' %}"
+                              alt="flag"
+                            />
+                            Deutsch</a
+                          >
+                        </li>
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">
+                            <img
+                              src="{% static 'heze/images/flag-portugal.png' %}"
+                              alt="flag"
+                            />
+                            󠁥Português
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">
+                            <img
+                              src="{% static 'heze/images/flag-jordan.png' %}"
+                              alt="flag"
+                            />
+                            العربية
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="#" class="menu-link">
+                            <img
+                              src="{% static 'heze/images/flag-china.png' %}"
+                              alt="flag"
+                            />
+                            中文
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="cart">
+                      <a href="cart.html" class="cart-btn">
+                        <i class="flaticon shopping-bag"></i>
+                        <span class="badge">0</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a
+                      href="#searchBoxResponsive"
+                      class="btn-search"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <i class="bx bx-search"></i>
+                    </a>
+                    <div
+                      id="searchBoxResponsive"
+                      class="search-box mfp-with-anim mfp-hide"
+                    >
+                      <form class="search-form">
+                        <input
+                          class="search-input"
+                          name="search"
+                          placeholder="Search"
+                          type="text"
+                        />
+                        <button type="submit" class="btn-search">
+                          <i class="bx bx-search"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="{% static 'img/hezelight.png' %}"
+                  style="width: 100px"
+                  alt="Logo"
+                />
+                <img
+                  src="{% static 'img/hezelight.png' %}"
+                  style="width: 100px"
+                  alt="Logo"
+                />
+              </a>
+              <div class="collapse navbar-collapse mean-menu">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active toggle">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link toggle"
+                      >Hezender Modalities<i class="bx bx-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="expert.html" class="nav-link">Our Expert</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="appointment.html" class="nav-link"
+                          >Appointment</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link toggle"
+                          >User<i class="bx bx-chevron-down"></i
+                        ></a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="register.html" class="nav-link"
+                              >Register</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="my-account.html" class="nav-link"
+                              >My Account</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="forgot-password.html" class="nav-link"
+                              >Forgot Password</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="error-404.html" class="nav-link">404 Error</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="coming-soon.html" class="nav-link"
+                          >Coming Soon</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a href="privacy-policy.html" class="nav-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a href="terms-of-service.html" class="nav-link"
+                          >Terms & Conditions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-									<li class="nav-item">
-										<a href="#" class="nav-link toggle"
-											>Education<i class="bx bx-chevron-down"></i
-										></a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="services.html" class="nav-link">Services</a>
-											</li>
-											<li class="nav-item">
-												<a href="services-details.html" class="nav-link"
-													>Services Details</a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link toggle"
-											>Content Hub<i class="bx bx-chevron-down"></i
-										></a>
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="blog.html" class="nav-link">Blog</a>
-											</li>
-											<li class="nav-item">
-												<a href="blog-details.html" class="nav-link"
-													>Blog Details</a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a href="contact.html" class="nav-link">Contact Us</a>
-									</li>
-								</ul>
-							</div>
-							<div class="side-option">
-								<div class="item">
-									<div class="language">
-										<a href="#language" class="language-button"
-											>Language<i class="bx bx-chevron-down"></i>
-										</a>
-										<ul class="menu">
-											<li class="menu-item">
-												<a href="#" class="menu-link">
-													<img
-														src="{{ static_url_for('static', filename='build/heze/images/flag-uk.png')}}"
-														alt="flag"
-													/>
-													English
-												</a>
-											</li>
-											<li class="menu-item">
-												<a href="#" class="menu-link">
-													<img
-														src="{{ static_url_for('static', filename='build/heze/images/flag-germany.png')}}"
-														alt="flag"
-													/>
-													Deutsch</a
-												>
-											</li>
-											<li class="menu-item">
-												<a href="#" class="menu-link">
-													<img
-														src="{{ static_url_for('static', filename='build/heze/images/flag-portugal.png')}}"
-														alt="flag"
-													/>
-													󠁥Português
-												</a>
-											</li>
-											<li class="menu-item">
-												<a href="#" class="menu-link">
-													<img
-														src="{{ static_url_for('static', filename='build/heze/images/flag-jordan.png')}}"
-														alt="flag"
-													/>
-													العربية
-												</a>
-											</li>
-											<li class="menu-item">
-												<a href="#" class="menu-link">
-													<img
-														src="{{ static_url_for('static', filename='build/heze/images/flag-china.png')}}"
-														alt="flag"
-													/>
-													中文
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link toggle"
+                      >Education<i class="bx bx-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="services-details.html" class="nav-link"
+                          >Services Details</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link toggle"
+                      >Content Hub<i class="bx bx-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="blog-details.html" class="nav-link"
+                          >Blog Details</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="side-option">
+                <div class="item">
+                  <div class="language">
+                    <a href="#language" class="language-button"
+                      >Language<i class="bx bx-chevron-down"></i>
+                    </a>
+                    <ul class="menu">
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <img
+                            src="{% static 'heze/images/flag-uk.png' %}"
+                            alt="flag"
+                          />
+                          English
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <img
+                            src="{% static 'heze/images/flag-germany.png' %}"
+                            alt="flag"
+                          />
+                          Deutsch</a
+                        >
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <img
+                            src="{% static 'heze/images/flag-portugal.png' %}"
+                            alt="flag"
+                          />
+                          󠁥Português
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <img
+                            src="{% static 'heze/images/flag-jordan.png' %}"
+                            alt="flag"
+                          />
+                          العربية
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <img
+                            src="{% static 'heze/images/flag-china.png' %}"
+                            alt="flag"
+                          />
+                          中文
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-								<div class="item">
-									<a
-										href="#searchBox"
-										class="btn-search"
-										data-effect="mfp-zoom-in"
-									>
-										<i class="bx bx-search"></i>
-									</a>
-									<div id="searchBox" class="search-box mfp-with-anim mfp-hide">
-										<form class="search-form">
-											<input
-												class="search-input"
-												name="search"
-												placeholder="Search"
-												type="text"
-											/>
-											<button type="submit" class="btn-search">
-												<i class="bx bx-search"></i>
-											</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</header>
-		{% with messages = get_flashed_messages(with_categories=true) %} {% if
-		messages %}
-		<div class="row">
-			<div class="col-md-12">
-				{% for category, message in messages %}
-				<div class="alert alert-{{ category }}">
-					<a class="close" title="Close" href="#" data-dismiss="alert"
-						>&times;</a
-					>
-					{{ message }}
-				</div>
-				<!-- end .alert -->
-				{% endfor %}
-			</div>
-			<!-- end col-md -->
-		</div>
-		<!-- end row -->
-		{% endif %} {% endwith %} {% block content %} {% endblock content %}
+                <div class="item">
+                  <a
+                    href="#searchBox"
+                    class="btn-search"
+                    data-effect="mfp-zoom-in"
+                  >
+                    <i class="bx bx-search"></i>
+                  </a>
+                  <div id="searchBox" class="search-box mfp-with-anim mfp-hide">
+                    <form class="search-form">
+                      <input
+                        class="search-input"
+                        name="search"
+                        placeholder="Search"
+                        type="text"
+                      />
+                      <button type="submit" class="btn-search">
+                        <i class="bx bx-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% comment %} {% with messages = get_flashed_messages(with_categories=true)
+    %} {% if messages %}
+    <div class="row">
+      <div class="col-md-12">
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+          <a class="close" title="Close" href="#" data-dismiss="alert"
+            >&times;</a
+          >
+          {{ message }}
+        </div>
+        <!-- end .alert -->
+        {% endfor %}
+      </div>
+      <!-- end col-md -->
+    </div>
+    <!-- end row -->
+    {% endif %} {% endwith %} {% endcomment %} 
+    {% block content %} {% endblock content %}
 
-		<section id="testimonial" class="testimonial-section pb-100">
-			<div class="container">
-				<div class="container-inner">
-					<div class="row align-items-center">
-						<div class="col-lg-6 col-sm-12">
-							<div class="image">
-								<img
-									src="{{ static_url_for('static', filename='build/heze/images/testimonial.png')}}"
-									alt="Demo Image"
-								/>
-								<img
-									src="{{ static_url_for('static', filename='build/heze/images/line3.png')}}"
-									alt="Shape Image"
-									class="shape"
-								/>
-							</div>
-						</div>
-						<div class="col-lg-6 col-sm-12">
-							<div class="content">
-								<div class="quote">
-									<i class="bx bxs-quote-alt-right"></i>
-									<img
-										src="{{ static_url_for('static', filename='build/heze/images/shape2.png')}}"
-										alt="Shape Image"
-									/>
-									<span class="top"></span>
-									<span class="left"></span>
-									<span class="right"></span>
-									<span class="bottom"></span>
-								</div>
-								<h2 class="title">What Our Clients Say<span></span></h2>
-							</div>
-							<div class="testimonial-slider owl-carousel">
-								<div class="slider-item">
-									<div class="card">
-										<p class="text">
-											<q
-												>There are many variations of passages of Lorem Ipsum
-												available, but the majority have suffered alteration in
-												some form, by injected humour, or randomised words which
-												don't look even slightly believable</q
-											>
-										</p>
-										<h5 class="client-name">Grace Hilton</h5>
-									</div>
-								</div>
-								<div class="slider-item">
-									<div class="card">
-										<p class="text">
-											<q
-												>There are many variations of passages of Lorem Ipsum
-												available, but the majority have suffered alteration in
-												some form, by injected humour, or randomised words which
-												don't look even slightly believable</q
-											>
-										</p>
-										<h5 class="client-name">Morgan Dyer</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="testimonial" class="testimonial-section pb-100">
+      <div class="container">
+        <div class="container-inner">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/testimonial.png' %}"
+                  alt="Demo Image"
+                />
+                <img
+                  src="{% static 'heze/images/line3.png' %}"
+                  alt="Shape Image"
+                  class="shape"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="content">
+                <div class="quote">
+                  <i class="bx bxs-quote-alt-right"></i>
+                  <img
+                    src="{% static 'heze/images/shape2.png' %}"
+                    alt="Shape Image"
+                  />
+                  <span class="top"></span>
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  <span class="bottom"></span>
+                </div>
+                <h2 class="title">What Our Clients Say<span></span></h2>
+              </div>
+              <div class="testimonial-slider owl-carousel">
+                <div class="slider-item">
+                  <div class="card">
+                    <p class="text">
+                      <q
+                        >There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable</q
+                      >
+                    </p>
+                    <h5 class="client-name">Grace Hilton</h5>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="card">
+                    <p class="text">
+                      <q
+                        >There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable</q
+                      >
+                    </p>
+                    <h5 class="client-name">Morgan Dyer</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<footer class="footer-area">
-			<div class="container">
-				<div class="footer-top">
-					<div class="row align-items-center">
-						<div class="col-lg-5 col-md-6 col-sm-6 col-12">
-							<div class="footer-widget ptb-100 border-right">
-								<div class="navbar-brand">
-									<a href="index.html">
-										<img
-											src="{{ static_url_for('static', filename='build/img/heze.png')}}"
-											style="width: 150px"
-											alt="Logo"
-										/>
-									</a>
-								</div>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s.
-								</p>
-								<div class="social-link">
-									<h3>Follow Us On</h3>
-									<a href="#" target="_blank"
-										><i class="bx bxl-facebook"></i
-									></a>
-									<a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-									<a href="#" target="_blank"
-										><i class="bx bxl-linkedin"></i
-									></a>
-									<a href="#" target="_blank"
-										><i class="bx bxl-instagram"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-6 col-12">
-							<div class="footer-widget ptb-100">
-								<h3>Company</h3>
-								<ul class="footer-links">
-									<li>
-										<a href="about.html">About Us</a>
-									</li>
-									<li>
-										<a href="blog.html">Blogs</a>
-									</li>
-									<li>
-										<a href="team.html">Team</a>
-									</li>
-									<li>
-										<a href="shop-left-sidebar.html">Shop</a>
-									</li>
-									<li>
-										<a href="contact.html">Contact</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-6 col-12">
-							<div class="footer-widget ptb-100">
-								<h3>Services</h3>
-								<ul class="footer-links">
-									<li>
-										<a href="services-details.html">Spa</a>
-									</li>
-									<li>
-										<a href="services-details.html">Hair Cut</a>
-									</li>
-									<li>
-										<a href="services-details.html">Massage</a>
-									</li>
-									<li>
-										<a href="services-details.html">Makeup</a>
-									</li>
-									<li>
-										<a href="services-details.html">Bridal</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-6 col-12">
-							<div class="footer-widget ptb-100">
-								<h3>Quick Links</h3>
-								<ul class="footer-links">
-									<li>
-										<a href="faq.html">FAQ</a>
-									</li>
-									<li>
-										<a href="appointment.html">Appointment</a>
-									</li>
-									<li>
-										<a href="terms-of-service.html">Terms & Conditions</a>
-									</li>
-									<li>
-										<a href="privacy-policy.html">Privacy Policy</a>
-									</li>
-									<li>
-										<a href="my-account.html">My Account</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="copy-right-area border-top">
-					<div class="copy-right-content">
-						<span>
-							Copyright @
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							Hezender. Designed By
-							<a href="https://doziesiky.com/" target="_blank">
-								Chidozie C. Okafor
-							</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</footer>
+    <footer class="footer-area">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-12">
+              <div class="footer-widget ptb-100 border-right">
+                <div class="navbar-brand">
+                  <a href="index.html">
+                    <img
+                      src="{% static 'img/heze.png' %}"
+                      style="width: 150px"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <div class="social-link">
+                  <h3>Follow Us On</h3>
+                  <a href="#" target="_blank"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" target="_blank"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div class="footer-widget ptb-100">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="team.html">Team</a>
+                  </li>
+                  <li>
+                    <a href="shop-left-sidebar.html">Shop</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div class="footer-widget ptb-100">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                  <li>
+                    <a href="services-details.html">Spa</a>
+                  </li>
+                  <li>
+                    <a href="services-details.html">Hair Cut</a>
+                  </li>
+                  <li>
+                    <a href="services-details.html">Massage</a>
+                  </li>
+                  <li>
+                    <a href="services-details.html">Makeup</a>
+                  </li>
+                  <li>
+                    <a href="services-details.html">Bridal</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+              <div class="footer-widget ptb-100">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="appointment.html">Appointment</a>
+                  </li>
+                  <li>
+                    <a href="terms-of-service.html">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="my-account.html">My Account</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right-area border-top">
+          <div class="copy-right-content">
+            <span>
+              Copyright @
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Hezender. Designed By
+              <a href="https://doziesiky.com/" target="_blank">
+                Chidozie C. Okafor
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<div class="go-top"><i class="bx bx-upvote"></i></div>
+    <div class="go-top"><i class="bx bx-upvote"></i></div>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/jquery.min.js')}}"></script>
+    <script src="{% static 'heze/js/jquery.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/popper.min.js')}}"></script>
+    <script src="{% static 'heze/js/popper.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/bootstrap.min.js')}}"></script>
+    <script src="{% static 'heze/js/bootstrap.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/smoothscroll.js')}}"></script>
+    <script src="{% static 'heze/js/smoothscroll.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{% static 'heze/js/jquery.nice-select.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{% static 'heze/js/jquery.magnific-popup.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/owl.carousel.min.js')}}"></script>
+    <script src="{% static 'heze/js/owl.carousel.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/jquery.mixitup.min.js')}}"></script>
+    <script src="{% static 'heze/js/jquery.mixitup.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/range-slider.min.js')}}"></script>
+    <script src="{% static 'heze/js/range-slider.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/meanmenu.min.js')}}"></script>
+    <script src="{% static 'heze/js/meanmenu.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/form-validator.min.js')}}"></script>
+    <script src="{% static 'heze/js/form-validator.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{% static 'heze/js/jquery.ajaxchimp.min.js' %}"></script>
 
-		<script src="{{ static_url_for('static', filename='build/heze/js/script.js')}}"></script>
-	</body>
+    <script src="{% static 'heze/js/script.js' %}"></script>
+  </body>
 </html>

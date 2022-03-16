@@ -1,1142 +1,1127 @@
-{% extends 'base/base.html' %} {% block title %}Hezender Aesthetic{% endblock
-title %} {% block content %}
+{% extends 'base/base.html' %} {% load static %} {% block title %}Hezender
+Aesthetic {% endblock title %} {% block content %}
 <div id="home" class="home-banner-area">
-	<div class="container-fluid p-0">
-		<div class="banner-slider owl-carousel">
-			<div class="slider-item item-one">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="title">
-							Wood Therapy
-							<span></span>
-						</h1>
-						<p class="text">
-							We are a team of highly skilled wood Massage Therapists. We offer
-							a wide range of services to suit your needs.
-						</p>
+  <div class="container-fluid p-0">
+    <div class="banner-slider owl-carousel">
+      <div class="slider-item item-one">
+        <div class="container">
+          <div class="banner-content">
+            <h1 class="title">
+              Wood Therapy
+              <span></span>
+            </h1>
+            <p class="text">
+              We are a team of highly skilled wood Massage Therapists. We offer
+              a wide range of services to suit your needs.
+            </p>
 
-						<div class="btn-group">
-							<a href="appointment.html" class="primary-btn">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slider-item item-two">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="title">
-							Full Body Contouring
-							<span></span>
-						</h1>
-						<p class="text">
-							Our Full Body Contouring is a comprehensive treatment that
-							includes a full body massage, a facial, a neck massage, and other
-							treatments.
-						</p>
-						<div class="btn-group">
-							<a href="appointment.html" class="primary-btn">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slider-item item-three">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="title">
-							Cellulite Removal
-							<span></span>
-						</h1>
-						<p class="text">
-							We offer a wide range of services to suit your needs. We are a
-							team of highly skilled wood Massage Therapists.
-						</p>
-						<div class="btn-group">
-							<a href="appointment.html" class="primary-btn">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="btn-group">
+              <a href="appointment.html" class="primary-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-item item-two">
+        <div class="container">
+          <div class="banner-content">
+            <h1 class="title">
+              Full Body Contouring
+              <span></span>
+            </h1>
+            <p class="text">
+              Our Full Body Contouring is a comprehensive treatment that
+              includes a full body massage, a facial, a neck massage, and other
+              treatments.
+            </p>
+            <div class="btn-group">
+              <a href="appointment.html" class="primary-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-item item-three">
+        <div class="container">
+          <div class="banner-content">
+            <h1 class="title">
+              Cellulite Removal
+              <span></span>
+            </h1>
+            <p class="text">
+              We offer a wide range of services to suit your needs. We are a
+              team of highly skilled wood Massage Therapists.
+            </p>
+            <div class="btn-group">
+              <a href="appointment.html" class="primary-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <section id="about" class="about-section pt-100 pb-70">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6">
-				<div class="image mb-30">
-					<img
-						src="{{url_for('static', filename='build/img/3.jpeg')}}"
-						alt="Demo Image"
-					/>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="content mb-30">
-					<h2 class="title">
-						Story Behind Hezender Aesthetic
-						<span></span>
-					</h2>
-					<p class="text">
-						Hezender Aesthetic is the Nations Leader in organic sculpting with
-						Wood, Metal and Ice Therapy. We have been in the Beauty Industry for
-						10 years and launched an Organic cold trend to body and face
-						sculpting. Over the years our main mission is to provide licensed
-						professionals an alternative to invasive treatments. Learn the
-						organic way to sculpt!
-					</p>
-					<ul class="content-list">
-						<li><h6>100% NATURAL, NON-INVASIVE</h6></li>
-						<li><h6>FREE OF CONTRAINDICATIONS</h6></li>
-						<li><h6>ACTIVATES LYMPHATIC SYSTEM</h6></li>
-						<li><h6>ELIMINATES TOXINS</h6></li>
-						<li><h6>SPEEDS UP METABOLISM</h6></li>
-						<li><h6>BREAKS DOWN CELLULITE</h6></li>
-					</ul>
-					<a href="about.html" class="primary-btn">Discover</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bg-shape">
-		<img
-			src="{{url_for('static', filename='build/heze/images/shape1.png')}}"
-			alt="Shape Image"
-		/>
-		<img
-			src="{{url_for('static', filename='build/heze/images/line1.png')}}"
-			alt="Shape Image"
-		/>
-	</div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="image mb-30">
+          <img src="{% static 'img/3.jpeg' %}" alt="Demo Image" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content mb-30">
+          <h2 class="title">
+            Story Behind Hezender Aesthetic
+            <span></span>
+          </h2>
+          <p class="text">
+            Hezender Aesthetic is the Nations Leader in organic sculpting with
+            Wood, Metal and Ice Therapy. We have been in the Beauty Industry for
+            10 years and launched an Organic cold trend to body and face
+            sculpting. Over the years our main mission is to provide licensed
+            professionals an alternative to invasive treatments. Learn the
+            organic way to sculpt!
+          </p>
+          <ul class="content-list">
+            <li><h6>100% NATURAL, NON-INVASIVE</h6></li>
+            <li><h6>FREE OF CONTRAINDICATIONS</h6></li>
+            <li><h6>ACTIVATES LYMPHATIC SYSTEM</h6></li>
+            <li><h6>ELIMINATES TOXINS</h6></li>
+            <li><h6>SPEEDS UP METABOLISM</h6></li>
+            <li><h6>BREAKS DOWN CELLULITE</h6></li>
+          </ul>
+          <a href="about.html" class="primary-btn">Discover</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-shape">
+    <img src="{% static 'heze/images/shape1.png' %}" alt="Shape Image" />
+    <img src="{% static 'heze/images/line1.png' %}" alt="Shape Image" />
+  </div>
 </section>
 
 <section id="gallery" class="gallery-section pt-100">
-	<div class="container">
-		<div class="section-title">
-			<h2>Spa Gallery<span></span></h2>
-		</div>
-		<div class="nav-tabs-navigation">
-			<ul class="nav nav-tabs" role="tablist">
-				<li class="nav-item">
-					<a
-						class="nav-link active"
-						id="spa-tab"
-						data-bs-toggle="tab"
-						href="#tab1"
-						role="tab"
-						aria-controls="tab1"
-						aria-selected="true"
-						>Spa & Health</a
-					>
-				</li>
-				<li class="nav-item">
-					<a
-						class="nav-link"
-						id="hair-tab"
-						data-bs-toggle="tab"
-						href="#tab2"
-						role="tab"
-						aria-controls="tab2"
-						aria-selected="false"
-						>Hair Cut</a
-					>
-				</li>
-				<li class="nav-item">
-					<a
-						class="nav-link"
-						id="makeup-tab"
-						data-bs-toggle="tab"
-						href="#tab3"
-						role="tab"
-						aria-controls="tab3"
-						aria-selected="false"
-						>Makeup</a
-					>
-				</li>
-			</ul>
-		</div>
-		<div class="tab-content">
-			<div
-				class="tab-pane show active"
-				id="tab1"
-				role="tabpanel"
-				aria-labelledby="spa-tab"
-			>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery1.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Hydrotherapy</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery2.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Spa Manicures</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.99</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery3.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Sugar Scrubs</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$19.10</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery4.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Body Wraps</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$15.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery5.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Cellulite Removal</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery6.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Facial Treatment</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.40</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div
-				class="tab-pane"
-				id="tab2"
-				role="tabpanel"
-				aria-labelledby="hair-tab"
-			>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery1.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Hydrotherapy</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery2.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Spa Manicures</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.99</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery3.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Sugar Scrubs</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$19.10</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery4.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Body Wraps</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$15.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery5.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Cellulite Removal</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery6.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Facial Treatment</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.40</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div
-				class="tab-pane"
-				id="tab3"
-				role="tabpanel"
-				aria-labelledby="makeup-tab"
-			>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery1.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Hydrotherapy</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery2.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Spa Manicures</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.99</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery3.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Sugar Scrubs</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$19.10</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery4.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Body Wraps</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$15.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery5.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Cellulite Removal</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$11.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card mb-30">
-							<div class="image">
-								<img
-									src="{{url_for('static', filename='build/heze/images/gallery/gallery6.jpg')}}"
-									alt="Demo Image"
-								/>
-								<div class="hover-content">
-									<a href="appointment.html">Book Now</a>
-								</div>
-							</div>
-							<div class="content">
-								<h3 class="title">
-									<a href="services-details.html">Facial Treatment</a>
-								</h3>
-								<p class="text">
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since.
-								</p>
-								<span class="price">$13.40</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="section-title">
+      <h2>Spa Gallery<span></span></h2>
+    </div>
+    <div class="nav-tabs-navigation">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="spa-tab"
+            data-bs-toggle="tab"
+            href="#tab1"
+            role="tab"
+            aria-controls="tab1"
+            aria-selected="true"
+            >Spa & Health</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="hair-tab"
+            data-bs-toggle="tab"
+            href="#tab2"
+            role="tab"
+            aria-controls="tab2"
+            aria-selected="false"
+            >Hair Cut</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="makeup-tab"
+            data-bs-toggle="tab"
+            href="#tab3"
+            role="tab"
+            aria-controls="tab3"
+            aria-selected="false"
+            >Makeup</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div
+        class="tab-pane show active"
+        id="tab1"
+        role="tabpanel"
+        aria-labelledby="spa-tab"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery1.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Hydrotherapy</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery2.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Spa Manicures</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery3.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Sugar Scrubs</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$19.10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery4.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Body Wraps</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery5.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Cellulite Removal</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery6.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Facial Treatment</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane"
+        id="tab2"
+        role="tabpanel"
+        aria-labelledby="hair-tab"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery1.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Hydrotherapy</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery2.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Spa Manicures</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery3.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Sugar Scrubs</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$19.10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery4.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Body Wraps</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery5.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Cellulite Removal</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery6.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Facial Treatment</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane"
+        id="tab3"
+        role="tabpanel"
+        aria-labelledby="makeup-tab"
+      >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery1.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Hydrotherapy</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery2.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Spa Manicures</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery3.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Sugar Scrubs</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$19.10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery4.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Body Wraps</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery5.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Cellulite Removal</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$11.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-30">
+              <div class="image">
+                <img
+                  src="{% static 'heze/images/gallery/gallery6.jpg' %}"
+                  alt="Demo Image"
+                />
+                <div class="hover-content">
+                  <a href="appointment.html">Book Now</a>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="title">
+                  <a href="services-details.html">Facial Treatment</a>
+                </h3>
+                <p class="text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since.
+                </p>
+                <span class="price">$13.40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="promo-contact" class="promo-contact-section pt-70 pb-70">
-	<div class="container">
-		<div class="row align-items-center justify-content-center">
-			<div class="col-lg-4 col-md-6">
-				<div class="card mb-30">
-					<div class="icon">
-						<i class="flaticon location-pin"></i>
-					</div>
-					<div class="content">
-						<h3 class="title">Our Location</h3>
-						<span class="text">32 Anmoore Road, NY 130</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="card mb-30">
-					<div class="icon">
-						<i class="flaticon phone"></i>
-					</div>
-					<div class="content">
-						<h3 class="title">Contact Number</h3>
-						<span class="text"><a href="tel:+502464674">+502 464 674</a></span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="card mb-30">
-					<div class="icon">
-						<i class="flaticon alarm-clock"></i>
-					</div>
-					<div class="content">
-						<h3 class="title">Opening Hours</h3>
-						<span class="text">07:00 AM Till 08:00 PM</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-30">
+          <div class="icon">
+            <i class="flaticon location-pin"></i>
+          </div>
+          <div class="content">
+            <h3 class="title">Our Location</h3>
+            <span class="text">32 Anmoore Road, NY 130</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-30">
+          <div class="icon">
+            <i class="flaticon phone"></i>
+          </div>
+          <div class="content">
+            <h3 class="title">Contact Number</h3>
+            <span class="text"><a href="tel:+502464674">+502 464 674</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-30">
+          <div class="icon">
+            <i class="flaticon alarm-clock"></i>
+          </div>
+          <div class="content">
+            <h3 class="title">Opening Hours</h3>
+            <span class="text">07:00 AM Till 08:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="service" class="service-section">
-	<div class="container-fluid">
-		<div class="row justify-content-center">
-			<div class="col p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/service/service1.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="content">
-						<h3 class="title">
-							<a href="services-details.html">Facial</a>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
-							nonumy.
-						</p>
-						<div class="hover-content">
-							<a href="appointment.html" class="primary-btn">Appointment</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/service/service2.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="content">
-						<h3 class="title">
-							<a href="services-details.html">Makeup</a>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
-							nonumy.
-						</p>
-						<div class="hover-content">
-							<a href="appointment.html" class="primary-btn">Appointment</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/service/service3.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="content">
-						<h3 class="title">
-							<a href="services-details.html">Hair Style</a>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
-							nonumy.
-						</p>
-						<div class="hover-content">
-							<a href="appointment.html" class="primary-btn">Appointment</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/service/service4.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="content">
-						<h3 class="title"><a href="services-details.html">Nail</a></h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
-							nonumy.
-						</p>
-						<div class="hover-content">
-							<a href="appointment.html" class="primary-btn">Appointment</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/service/service5.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="content">
-						<h3 class="title">
-							<a href="services-details.html">Bridal</a>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
-							nonumy.
-						</p>
-						<div class="hover-content">
-							<a href="appointment.html" class="primary-btn">Appointment</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/service/service1.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="title">
+              <a href="services-details.html">Facial</a>
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
+              nonumy.
+            </p>
+            <div class="hover-content">
+              <a href="appointment.html" class="primary-btn">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/service/service2.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="title">
+              <a href="services-details.html">Makeup</a>
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
+              nonumy.
+            </p>
+            <div class="hover-content">
+              <a href="appointment.html" class="primary-btn">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/service/service3.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="title">
+              <a href="services-details.html">Hair Style</a>
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
+              nonumy.
+            </p>
+            <div class="hover-content">
+              <a href="appointment.html" class="primary-btn">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/service/service4.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="title"><a href="services-details.html">Nail</a></h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
+              nonumy.
+            </p>
+            <div class="hover-content">
+              <a href="appointment.html" class="primary-btn">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/service/service5.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="content">
+            <h3 class="title">
+              <a href="services-details.html">Bridal</a>
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam
+              nonumy.
+            </p>
+            <div class="hover-content">
+              <a href="appointment.html" class="primary-btn">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="newsletter" class="newsletter-section pt-100 pb-70">
-	<div class="container">
-		<div class="row align-items-center justify-content-center">
-			<div class="col-lg-4 col-md-10">
-				<div class="content mb-30">
-					<h2>
-						Newsletter
-						<span></span>
-					</h2>
-					<p>
-						It is a long established fact that a reader will be distracted by
-						the readable content of a page when looking at its layout. The point
-						of using Lorem Ipsum is that it has a more.
-					</p>
-					<form class="newsletter-form">
-						<div class="form-group">
-							<input
-								class="form-control"
-								placeholder="Full Name"
-								type="text"
-								name="NAME"
-								required=""
-								autocomplete="off"
-							/>
-						</div>
-						<div class="form-group">
-							<input
-								class="form-control"
-								placeholder="E-mail Address"
-								type="text"
-								name="EMAIL"
-								required=""
-								autocomplete="off"
-							/>
-						</div>
-						<button class="primary-btn" type="submit">Subscribe</button>
-						<div id="validator-newsletter" class="form-result"></div>
-					</form>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-10 mb-30">
-				<div class="image">
-					<img
-						src="{{url_for('static', filename='build/heze/images/newsletter1.jpg')}}"
-						alt="Demo Image"
-					/>
-				</div>
-			</div>
-		</div>
-		<div class="bg-shape">
-			<img
-				src="{{url_for('static', filename='build/heze/images/line2.png')}}"
-				alt="Shape Image"
-			/>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-4 col-md-10">
+        <div class="content mb-30">
+          <h2>
+            Newsletter
+            <span></span>
+          </h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more.
+          </p>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input
+                class="form-control"
+                placeholder="Full Name"
+                type="text"
+                name="NAME"
+                required=""
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                placeholder="E-mail Address"
+                type="text"
+                name="EMAIL"
+                required=""
+                autocomplete="off"
+              />
+            </div>
+            <button class="primary-btn" type="submit">Subscribe</button>
+            <div id="validator-newsletter" class="form-result"></div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-10 mb-30">
+        <div class="image">
+          <img
+            src="{% static 'heze/images/newsletter1.jpg' %}"
+            alt="Demo Image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="bg-shape">
+      <img src="{% static 'heze/images/line2.png' %}" alt="Shape Image" />
+    </div>
+  </div>
 </section>
 
 <section id="fashion" class="fashion-section ptb-100">
-	<div class="container-fluid">
-		<div class="section-title">
-			<h2 class="title">Fashion Inspirations <span></span></h2>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-				eirmod tempor invidunt ut labore et dolore.
-			</p>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion1.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion2.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion3.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion4.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion5.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 p-0">
-				<div class="card">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/fashion6.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="hover-content">
-						<h3><a href="services-details.html">View Details</a></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <div class="section-title">
+      <h2 class="title">Fashion Inspirations <span></span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion1.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion2.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion3.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion4.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion5.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 p-0">
+        <div class="card">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/fashion6.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="hover-content">
+            <h3><a href="services-details.html">View Details</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="blog" class="blog-section">
-	<div class="container-fluid">
-		<div class="section-title">
-			<h2 class="title">News And Popular Offers<span></span></h2>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-				eirmod tempor invidunt ut labore et dolore.
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-8 col-md-12 p-0">
-			<div class="blog-slider owl-carousel">
-				<div class="slider-item">
-					<div class="card">
-						<span class="time">October 18, 2021, / Bridal</span>
-						<h3 class="title">
-							<a href="blog-details.html"
-								>Art of Reinventing: How This Bicycle Company Refines Its</a
-							>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-							erat, sed diam voluptua. At vero eos et accusam et justo duo
-							dolores et ea.
-						</p>
-						<hr />
-						<ul class="info-list">
-							<li>Isobel Coleman</li>
-							<li>24 Comment</li>
-						</ul>
-						<div class="cta-btn">
-							<a href="blog-details.html" class="btn-text read-more-btn"
-								>Read More<i class="bx bxs-right-arrow-alt"></i
-							></a>
-						</div>
-					</div>
-				</div>
-				<div class="slider-item">
-					<div class="card">
-						<span class="time">September 21, 2021, / Spa</span>
-						<h3 class="title">
-							<a href="blog-details.html"
-								>Three Trends That Will Shape Black Friday Cyber Monday</a
-							>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-							erat, sed diam voluptua. At vero eos et accusam et justo duo
-							dolores et ea.
-						</p>
-						<hr />
-						<ul class="info-list">
-							<li>Lilly Armstrong</li>
-							<li>31 Comment</li>
-						</ul>
-						<div class="cta-btn">
-							<a href="blog-details.html" class="btn-text read-more-btn"
-								>Read More<i class="bx bxs-right-arrow-alt"></i
-							></a>
-						</div>
-					</div>
-				</div>
-				<div class="slider-item">
-					<div class="card">
-						<span class="time">November 08, 2021, / Makeup</span>
-						<h3 class="title">
-							<a href="blog-details.html"
-								>Adapting to the Times: Three Unique Approaches to Know</a
-							>
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-							erat, sed diam voluptua. At vero eos et accusam et justo duo
-							dolores et ea.
-						</p>
-						<hr />
-						<ul class="info-list">
-							<li>Brooke Turner</li>
-							<li>14 Comment</li>
-						</ul>
-						<div class="cta-btn">
-							<a href="blog-details.html" class="btn-text read-more-btn"
-								>Read More<i class="bx bxs-right-arrow-alt"></i
-							></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 col-md-12 p-0">
-			<div class="video-content">
-				<div class="video-image">
-					<img
-						src="{{url_for('static', filename='build/img/1.jpeg')}}"
-						alt="video"
-					/>
-				</div>
-				<a href="https://youtu.be/PBwv9Sf1hlE" class="youtube-popup video-btn">
-					<i class="bx bx-play"></i>
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <div class="section-title">
+      <h2 class="title">News And Popular Offers<span></span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-12 p-0">
+      <div class="blog-slider owl-carousel">
+        <div class="slider-item">
+          <div class="card">
+            <span class="time">October 18, 2021, / Bridal</span>
+            <h3 class="title">
+              <a href="blog-details.html"
+                >Art of Reinventing: How This Bicycle Company Refines Its</a
+              >
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea.
+            </p>
+            <hr />
+            <ul class="info-list">
+              <li>Isobel Coleman</li>
+              <li>24 Comment</li>
+            </ul>
+            <div class="cta-btn">
+              <a href="blog-details.html" class="btn-text read-more-btn"
+                >Read More<i class="bx bxs-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="card">
+            <span class="time">September 21, 2021, / Spa</span>
+            <h3 class="title">
+              <a href="blog-details.html"
+                >Three Trends That Will Shape Black Friday Cyber Monday</a
+              >
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea.
+            </p>
+            <hr />
+            <ul class="info-list">
+              <li>Lilly Armstrong</li>
+              <li>31 Comment</li>
+            </ul>
+            <div class="cta-btn">
+              <a href="blog-details.html" class="btn-text read-more-btn"
+                >Read More<i class="bx bxs-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="card">
+            <span class="time">November 08, 2021, / Makeup</span>
+            <h3 class="title">
+              <a href="blog-details.html"
+                >Adapting to the Times: Three Unique Approaches to Know</a
+              >
+            </h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea.
+            </p>
+            <hr />
+            <ul class="info-list">
+              <li>Brooke Turner</li>
+              <li>14 Comment</li>
+            </ul>
+            <div class="cta-btn">
+              <a href="blog-details.html" class="btn-text read-more-btn"
+                >Read More<i class="bx bxs-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 p-0">
+      <div class="video-content">
+        <div class="video-image">
+          <img src="{% static 'img/1.jpeg' %}" alt="video" />
+        </div>
+        <a href="https://youtu.be/PBwv9Sf1hlE" class="youtube-popup video-btn">
+          <i class="bx bx-play"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="team" class="team-section pt-100 pb-70">
-	<div class="container">
-		<div class="section-title">
-			<h2 class="title">Expert Beautician<span></span></h2>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-				eirmod tempor invidunt ut labore et dolore.
-			</p>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="card mb-30">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/team/team1.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="social-link">
-						<a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
-					</div>
-					<hr />
-					<div class="content">
-						<h3 class="title">
-							<a href="team.html">Cory Brown</a>
-						</h3>
-						<span class="text">Hair Stylist</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="card mb-30">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/team/team2.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="social-link">
-						<a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
-					</div>
-					<hr />
-					<div class="content">
-						<h3 class="title">
-							<a href="team.html">Brandi Boyd</a>
-						</h3>
-						<span class="text">Therapist</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="card mb-30">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/team/team3.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="social-link">
-						<a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
-					</div>
-					<hr />
-					<div class="content">
-						<h3 class="title">
-							<a href="team.html">Alicia Salazar</a>
-						</h3>
-						<span class="text">Makeover</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="card mb-30">
-					<div class="image">
-						<img
-							src="{{url_for('static', filename='build/heze/images/team/team4.jpg')}}"
-							alt="Demo Image"
-						/>
-					</div>
-					<div class="social-link">
-						<a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
-						<a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
-					</div>
-					<hr />
-					<div class="content">
-						<h3 class="title">
-							<a href="team.html">Edward Stevens</a>
-						</h3>
-						<span class="text">Makeup Artist</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="section-title">
+      <h2 class="title">Expert Beautician<span></span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card mb-30">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/team/team1.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
+          </div>
+          <hr />
+          <div class="content">
+            <h3 class="title">
+              <a href="team.html">Cory Brown</a>
+            </h3>
+            <span class="text">Hair Stylist</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card mb-30">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/team/team2.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
+          </div>
+          <hr />
+          <div class="content">
+            <h3 class="title">
+              <a href="team.html">Brandi Boyd</a>
+            </h3>
+            <span class="text">Therapist</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card mb-30">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/team/team3.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
+          </div>
+          <hr />
+          <div class="content">
+            <h3 class="title">
+              <a href="team.html">Alicia Salazar</a>
+            </h3>
+            <span class="text">Makeover</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card mb-30">
+          <div class="image">
+            <img
+              src="{% static 'heze/images/team/team4.jpg' %}"
+              alt="Demo Image"
+            />
+          </div>
+          <div class="social-link">
+            <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bx bxl-skype"></i></a>
+          </div>
+          <hr />
+          <div class="content">
+            <h3 class="title">
+              <a href="team.html">Edward Stevens</a>
+            </h3>
+            <span class="text">Makeup Artist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 {% endblock %}
