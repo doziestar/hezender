@@ -32,7 +32,7 @@ class Events(TemplateView):
 
 
 class Contact(TemplateView):
-    template_name = 'core/contact.html'
+    template_name = 'public/contact.html'
 
 
 class About(TemplateView):
