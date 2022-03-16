@@ -36,7 +36,7 @@ class Contact(TemplateView):
 
 
 class About(TemplateView):
-    template_name = 'core/about.html'
+    template_name = 'public/about.html'
 
 
 class Home(TemplateView):
