@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.shortcuts import redirect
 from django.utils.translation import gettext_lazy as _
 from django_extensions.db.models import TimeStampedModel, TitleDescriptionModel
 
@@ -31,6 +32,19 @@ class BlogModel(TimeStampedModel, TitleDescriptionModel):
         verbose_name = _('Blog')
         verbose_name_plural = _('Blogs')
         ordering = ['-created']
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return redirect('blog_detail', slug=self.slug)
+
+
+class TagModel(TitleDescriptionModel):
+    """Tag Model"""
+    class Meta:
+        verbose_name = _('Tag')
+        verbose_name_plural = _('Tags')
 
     def __str__(self):
         return self.title

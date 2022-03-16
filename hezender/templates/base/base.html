@@ -47,7 +47,7 @@
           <div class="container">
             <div class="main-responsive-menu">
               <div class="logo">
-                <a href="index.html">
+                <a href="/">
                   <img
                     src="{% static 'img/hezedark.png' %}"
                     style="width: 100px"
@@ -157,7 +157,7 @@
         <div class="main-nav">
           <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="/">
                 <img
                   src="{% static 'img/hezelight.png' %}"
                   style="width: 100px"
@@ -361,24 +361,6 @@
         </div>
       </div>
     </header>
-    {% comment %} {% with messages = get_flashed_messages(with_categories=true)
-    %} {% if messages %}
-    <div class="row">
-      <div class="col-md-12">
-        {% for category, message in messages %}
-        <div class="alert alert-{{ category }}">
-          <a class="close" title="Close" href="#" data-dismiss="alert"
-            >&times;</a
-          >
-          {{ message }}
-        </div>
-        <!-- end .alert -->
-        {% endfor %}
-      </div>
-      <!-- end col-md -->
-    </div>
-    <!-- end row -->
-    {% endif %} {% endwith %} {% endcomment %} 
     {% block content %} {% endblock content %}
 
     <section id="testimonial" class="testimonial-section pb-100">
@@ -454,7 +436,7 @@
             <div class="col-lg-5 col-md-6 col-sm-6 col-12">
               <div class="footer-widget ptb-100 border-right">
                 <div class="navbar-brand">
-                  <a href="index.html">
+                  <a href="/">
                     <img
                       src="{% static 'img/heze.png' %}"
                       style="width: 150px"

@@ -40,7 +40,7 @@ class About(TemplateView):
 
 
 class Home(TemplateView):
-    template_name = 'core/home.html'
+    template_name = 'public/index.html'
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
