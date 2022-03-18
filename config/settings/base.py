@@ -274,3 +274,20 @@ SOCIALACCOUNT_FORMS = {"signup": "hezender.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+# summernote
+SUMMERNOTE_THEME = "bs4"  # Show summernote with Bootstrap4
+SUMMERNOTE_CONFIG = {
+    "width": "100%",
+    "height": "480",
+    "toolbar": [
+        ["style", ["style"]],
+        ["font", ["bold", "italic", "underline", "clear"]],
+        ["fontname", ["fontname"]],
+        ["color", ["color"]],
+        ["para", ["ul", "ol", "paragraph"]],
+        ["table", ["table"]],
+        ["insert", ["link", "picture", "video"]],
+        ["view", ["fullscreen", "codeview"]],
+        ["help", ["help"]],
+    ],
+}

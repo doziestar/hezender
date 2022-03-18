@@ -10,7 +10,7 @@ from .models import BlogModel, EventModel
 
 class BlogDetailView(DetailView):
     model = BlogModel
-    template_name = "core/blog_detail.html"
+    template_name = "public/blog_details.html"
     context_object_name = "blog"
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
@@ -47,8 +47,8 @@ class Home(TemplateView):
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
-        context["blogs"] = BlogModel.objects.all()[0:2]
-        context["events"] = EventModel.objects.all()[0:2]
+        context["blogs"] = BlogModel.objects.all()[0:5]
+        # context["events"] = EventModel.objects.all()[0:2]
         return context
 
 

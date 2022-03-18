@@ -1,0 +1,273 @@
+{% extends 'base/base.html' %} {% load static %} {% block title %}Hezender
+Aesthetic | {{blog.title}} {% endblock title %} {% block content %}
+
+<div class="page-title-area">
+  <div class="container">
+    <div class="page-title-content">
+      <h1>{{blog.title}}</h1>
+      <ul>
+        <li class="item"><a href="/">Home</a></li>
+        <li class="item active"><span></span>Details</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg-image">
+    <img src="assets/images/page-title/blog-details.jpg" alt="Demo Image" />
+  </div>
+</div>
+
+<div class="blog-details-area pt-100 pb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12">
+        <aside class="aside-widget-area">
+          <div class="widget widget-search mb-30">
+            <form class="search-form">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Find Products"
+              />
+              <button type="submit" class="btn-text-only">
+                <i class="bx bx-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="widget widget-category mb-30">
+            <h3 class="title">Blog Category</h3>
+            <ul class="nav-list">
+              <li class="active">
+                <a href="blog-details.html">Spa & Health</a>
+                <span class="qty">10</span>
+              </li>
+              <li>
+                <a href="blog-details.html">Hair Cut</a>
+                <span class="qty">08</span>
+              </li>
+              <li>
+                <a href="blog-details.html">Nail</a>
+                <span class="qty">21</span>
+              </li>
+              <li>
+                <a href="blog-details.html">Massage</a>
+                <span class="qty">12</span>
+              </li>
+              <li>
+                <a href="blog-details.html">Body Care</a>
+                <span class="qty">13</span>
+              </li>
+            </ul>
+          </div>
+          <div class="widget widget-post mb-30">
+            <h3 class="title">Recent Post</h3>
+            <article class="article-item">
+              <div class="image">
+                <a href="blog-details.html"
+                  ><img src="assets/images/blog/blog-sm-1.jpg" alt="Demo Image"
+                /></a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="blog-details.html">Tips for Stress-free Weddings</a>
+                </h3>
+                <div class="author">By Courtney McKenzie</div>
+              </div>
+            </article>
+            <article class="article-item">
+              <div class="image">
+                <a href="blog-details.html"
+                  ><img src="assets/images/blog/blog-sm-2.jpg" alt="Demo Image"
+                /></a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="blog-details.html">Take Steps to Beautiful Summer</a>
+                </h3>
+                <div class="author">By Alexandra Morton</div>
+              </div>
+            </article>
+            <article class="article-item">
+              <div class="image">
+                <a href="blog-details.html"
+                  ><img src="assets/images/blog/blog-sm-3.jpg" alt="Demo Image"
+                /></a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="blog-details.html">Elemis Super-food Pro Radiance</a>
+                </h3>
+                <div class="author">By Lydia Birch</div>
+              </div>
+            </article>
+            <article class="article-item">
+              <div class="image">
+                <a href="blog-details.html"
+                  ><img src="assets/images/blog/blog-sm-4.jpg" alt="Demo Image"
+                /></a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="blog-details.html"
+                    >Spa Experiences Last Minute Guide</a
+                  >
+                </h3>
+                <div class="author">By Jasmine Page</div>
+              </div>
+            </article>
+          </div>
+          <div class="widget widget-tag mb-30">
+            <h3 class="title">Tag</h3>
+            <div class="tags">
+              <a href="#"> Body Care </a>
+              <a href="#"> Facial </a>
+              <a href="#"> Mask </a>
+              <a href="#"> Salt </a>
+              <a href="#"> Cream </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="col-lg-9 col-md-12">
+        <div class="blog-details-desc mb-30">
+          <div class="card">
+            <div class="image">
+              <img src="{{blog.image.url}}" alt="Demo Image" />
+            </div>
+            <div class="content">
+              <ul class="info-list">
+                <li>
+                  <span class="time"
+                    >{{blog.published_at | date:"d M Y"}}, /
+                    {% for tag in blog.tag %}tag {% endfor %}
+                    </span
+                  >
+                </li>
+                <li>{{blog.author}}</li>
+                <li>31 Comment</li>
+              </ul>
+              <h3 class="title">
+                {{ blog.title}}
+                <span></span>
+              </h3>
+              <p>{{ blog.description | safe }}</p>
+              <ul class="share-list">
+                <li>
+                  <h3 class="title">Tag</h3>
+                  {% for tag in blog.tag %}
+                  <span class="tags">tag,</span>
+                  {% endfor %}
+                </li>
+                <li>
+                  <h3 class="title">Share Now</h3>
+                  <div class="social-link">
+                    <a href="#" target="_blank"
+                      ><i class="bx bxl-facebook"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bx bxl-twitter"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bx bxl-linkedin"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bx bxl-instagram"></i
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+              <hr />
+              <div class="comments-area">
+                <h6>2 Comments</h6>
+                <ol class="comment-list">
+                  <li class="comment">
+                    <div class="comment-body">
+                      <div class="comment-author">
+                        <img src="assets/images/blog/author1.jpg" alt="image" />
+                      </div>
+                      <div class="comment-content">
+                        <div class="comment-metadata">
+                          <h4 class="name">Anthony Ruiz</h4>
+                        </div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Molestias rem perspiciatis necessitatibus ex
+                          recusandae doloribus aspernatur veniam sapiente
+                          ducimus dolores, quae dolor eligendi debitis porro.
+                          Reprehenderit et fugit dolor esse!
+                        </p>
+                        <a href="#" class="btn-text">Reply</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="comment">
+                    <div class="comment-body">
+                      <div class="comment-author">
+                        <img src="assets/images/blog/author2.jpg" alt="image" />
+                      </div>
+                      <div class="comment-content">
+                        <div class="comment-metadata">
+                          <h4 class="name">Brianna Hicks</h4>
+                        </div>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Perspiciatis deserunt optio rem placeat illum
+                          quidem, sapiente quisquam molestias quia nisi.
+                          Repellat soluta ipsam illum corrupti! Debitis
+                          voluptatem doloribus dicta in!
+                        </p>
+                        <a href="#" class="btn-text">Reply</a>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="comment-reply">
+                <form id="commentForm" class="comment-form">
+                  <h3 class="title">Write A Comment</h3>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xs-6">
+                      <div class="form-group">
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          placeholder="Write Your Comment"
+                          required="required"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xs-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          placeholder="Your Name"
+                          required="required"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Email Address"
+                          required="required"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="primary-btn">
+                    Submit comment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

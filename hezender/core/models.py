@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-from django.shortcuts import redirect
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django_extensions.db.models import TimeStampedModel, TitleDescriptionModel
 
@@ -32,7 +32,7 @@ class BlogModel(TimeStampedModel, TitleDescriptionModel):
         return self.title
 
     def get_absolute_url(self):
-        return redirect("blog_detail", slug=self.slug)
+        return reverse("core:blog_detail", kwargs={"slug": self.slug})
 
 
 class TagModel(TitleDescriptionModel):

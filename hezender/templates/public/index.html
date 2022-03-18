@@ -597,84 +597,36 @@ Aesthetic {% endblock title %} {% block content %}
   <div class="row">
     <div class="col-lg-8 col-md-12 p-0">
       <div class="blog-slider owl-carousel">
+        {% if blogs %} {% for blog in blogs %}
+
         <div class="slider-item">
           <div class="card">
-            <span class="time">October 18, 2021, / Bridal</span>
+            <span class="time"
+              >{{blog.published_at | date:"d M Y"}}, /
+              {% for tag in blog.tags %}tag{% endfor %}
+              </span
+            >
             <h3 class="title">
-              <a href="blog-details.html"
-                >Art of Reinventing: How This Bicycle Company Refines Its</a
+              <a href="{{blog.get_absolute_url}}"
+                >{{blog.title}}</a
               >
             </h3>
             <p class="text">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea.
+              {{blog.description | truncatechars:100 | safe}}
             </p>
             <hr />
             <ul class="info-list">
-              <li>Isobel Coleman</li>
+              <li>{{blog.author}}</li>
               <li>24 Comment</li>
             </ul>
             <div class="cta-btn">
-              <a href="blog-details.html" class="btn-text read-more-btn"
+              <a href="{{blog.get_absolute_url}}" class="btn-text read-more-btn"
                 >Read More<i class="bx bxs-right-arrow-alt"></i
               ></a>
             </div>
           </div>
         </div>
-        <div class="slider-item">
-          <div class="card">
-            <span class="time">September 21, 2021, / Spa</span>
-            <h3 class="title">
-              <a href="blog-details.html"
-                >Three Trends That Will Shape Black Friday Cyber Monday</a
-              >
-            </h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea.
-            </p>
-            <hr />
-            <ul class="info-list">
-              <li>Lilly Armstrong</li>
-              <li>31 Comment</li>
-            </ul>
-            <div class="cta-btn">
-              <a href="blog-details.html" class="btn-text read-more-btn"
-                >Read More<i class="bx bxs-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="slider-item">
-          <div class="card">
-            <span class="time">November 08, 2021, / Makeup</span>
-            <h3 class="title">
-              <a href="blog-details.html"
-                >Adapting to the Times: Three Unique Approaches to Know</a
-              >
-            </h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea.
-            </p>
-            <hr />
-            <ul class="info-list">
-              <li>Brooke Turner</li>
-              <li>14 Comment</li>
-            </ul>
-            <div class="cta-btn">
-              <a href="blog-details.html" class="btn-text read-more-btn"
-                >Read More<i class="bx bxs-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+        {% endfor %} {% endif %}
       </div>
     </div>
     <div class="col-lg-4 col-md-12 p-0">

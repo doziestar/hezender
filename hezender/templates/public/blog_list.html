@@ -6,7 +6,7 @@ Aesthetic {% endblock title %} {% block content %}
     <div class="page-title-content">
       <h1>Our Blogs</h1>
       <ul>
-        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="/">Home</a></li>
         <li class="item active"><span></span>Blog</li>
       </ul>
     </div>
@@ -130,7 +130,7 @@ Aesthetic {% endblock title %} {% block content %}
       <div class="col-lg-9 col-md-12">
         <section id="blog" class="blog-section">
           <div class="row">
-            {% if blog %} {% for post in blogs %}
+            {% if blogs %} {% for post in blogs %}
 
             <div class="col-md-6 col-sm-12">
               <div class="card mb-30">
