@@ -21,7 +21,7 @@ class BlogDetailView(DetailView):
 
 class BlogListView(ListView):
     model = BlogModel
-    template_name = "core/blog_list.html"
+    template_name = "public/blog_list.html"
     context_object_name = "blogs"
 
 

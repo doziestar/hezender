@@ -14,37 +14,33 @@ TODO:
 
 class BlogModel(TimeStampedModel, TitleDescriptionModel):
     """Blog Model"""
+
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    slug = models.SlugField(max_length=255, unique=True)
     content = models.TextField()
     published = models.BooleanField(default=False)
     published_at = models.DateTimeField(blank=True, null=True)
-    tags = models.ManyToManyField('TagModel', blank=True)
-    category = models.ForeignKey('CategoryModel', on_delete=models.CASCADE)
+    tags = models.ManyToManyField("TagModel", blank=True)
+    category = models.ManyToManyField("CategoryModel", blank=True)
+    image = models.ImageField(upload_to="blog/", blank=True, null=True)
 
     class Meta:
-        verbose_name = _('Blog')
-        verbose_name_plural = _('Blogs')
-
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        verbose_name = _('Blog')
-        verbose_name_plural = _('Blogs')
-        ordering = ['-created']
+        verbose_name = _("Blog")
+        verbose_name_plural = _("Blogs")
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        return redirect('blog_detail', slug=self.slug)
+        return redirect("blog_detail", slug=self.slug)
 
 
 class TagModel(TitleDescriptionModel):
     """Tag Model"""
+
     class Meta:
-        verbose_name = _('Tag')
-        verbose_name_plural = _('Tags')
+        verbose_name = _("Tag")
+        verbose_name_plural = _("Tags")
 
     def __str__(self):
         return self.title
@@ -52,9 +48,10 @@ class TagModel(TitleDescriptionModel):
 
 class CategoryModel(TimeStampedModel, TitleDescriptionModel):
     """Category Model"""
+
     class Meta:
-        verbose_name = _('Category')
-        verbose_name_plural = _('Categories')
+        verbose_name = _("Category")
+        verbose_name_plural = _("Categories")
 
     def __str__(self):
         return self.title
@@ -62,14 +59,15 @@ class CategoryModel(TimeStampedModel, TitleDescriptionModel):
 
 class EventModel(TimeStampedModel, TitleDescriptionModel):
     """Event Model"""
+
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     start = models.DateTimeField()
     end = models.DateTimeField()
     open = models.BooleanField(default=False)
 
     class Meta:
-        verbose_name = _('Event')
-        verbose_name_plural = _('Events')
+        verbose_name = _("Event")
+        verbose_name_plural = _("Events")
 
     def __str__(self):
         return self.title
